@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSS Software Service</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>SSS Software Services</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -14,251 +16,128 @@
         }
 
         body {
-            background: #f5f7fb;
+            background: #f5f7fa;
             color: #333;
-            line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: #fff;
-            padding: 90px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            color:rgba(255,255,255,1)
-        }
-
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        nav {
+            background: #0d6efd;
+            color: white;
+            padding: 15px 50px;
             display: flex;
             justify-content: space-between;
-            padding: 15px 10%;
-            background: #fff;
-            position: sticky;
-            top: 0;color:black;text-align:center;
-            
+            align-items: center;
         }
 
-        nav ul {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-            text-align:center;
-
-        }    
+        header h2 {
+            font-weight: 600;
+        }
 
         nav a {
+            color: white;
+            margin-left: 20px;
             text-decoration: none;
-            color: #333;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(to right, #0d6efd, #4dabf7);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            margin: 20px 0;
         }
 
         .btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 30px;
-            background: #00c6ff;
-            color: #fff;
+            background: white;
+            color: #0d6efd;
+            padding: 10px 20px;
+            border-radius: 5px;
             text-decoration: none;
-            border-radius: 30px;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #0072ff;
+            font-weight: 600;
         }
 
         section {
-            padding: 70px 10%;
-        }
-
-        .section-title {
+            padding: 60px 20px;
             text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .section-title h2 {
-            font-size: 2.2rem;
-            color: #203a43;
         }
 
         .services {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
         }
 
         .card {
-            background: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-8px);
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-            color: #2c5364;
-        }
-
-        .why {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            text-align: center;
-        }
-
-        .why div {
-            background: #fff;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-        }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .contact-form input, 
-        .contact-form textarea { 
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
-
-        .contact-form button {
-            background: #0072ff;
-            color: #fff;
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
         }
 
         footer {
-            background: #203a43;
-            color: #fff;
-            padding: 40px 20px;
+            background: #222;
+            color: white;
             text-align: center;
-        }
-
-        footer p {
-            opacity: 0.8;
-            margin-top: 10px;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.2rem;
-            }
+            padding: 20px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>SSS Software Service</h1>
-    <p>Building Smart Software • AI Solutions • Digital Growth</p>
-    <a href="#services" class="btn">Explore Our Services</a>
-<nav>
-    <h2>SSS Core</h2>
-    <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#why">Why Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-
+    <h2>SSS Software</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section id="services">
-    <div class="section-title">
-        <h2>Our Services</h2>
-    </div>
+<div class="hero">
+    <h1>Build Your Digital Future</h1>
+    <p>We create modern websites and applications</p>
+    <a href="#contact" class="btn">Get Started</a>
+</div>
 
+<section id="services">
+    <h2>Our Services</h2>
     <div class="services">
         <div class="card">
-            <h3>AI Solutions</h3>
-            <p>AI chatbots, workflow automation, and intelligent systems to improve business efficiency.</p>
+            <h3>Website Development</h3>
+            <p>Modern and responsive websites</p>
         </div>
-
-        <div class="card">
-            <h3>Web Development</h3>
-            <p>Fast, secure, and scalable websites using modern frontend and backend technologies.</p>
-        </div>
-
         <div class="card">
             <h3>App Development</h3>
-            <p>High-performance Android and iOS applications with smooth user experience.</p>
+            <p>Android & Web applications</p>
         </div>
-
         <div class="card">
-            <h3>UI / UX Design</h3>
-            <p>Creative, user-friendly designs that enhance engagement and brand identity.</p>
+            <h3>UI/UX Design</h3>
+            <p>Clean and user-friendly design</p>
         </div>
-
         <div class="card">
-            <h3>Data Services</h3>
-            <p>Accurate data entry, processing, analytics, and structured data management solutions.</p>
+            <h3>Maintenance</h3>
+            <p>Support and updates</p>
         </div>
     </div>
 </section>
-
-<section>
-    <div class="section-title">
-        <h2>Why Choose SSS Software Service</h2>
-    </div>
-
-    <div class="why">
-        <div>
-            <h3>✔ Expert Team</h3>
-            <p>Skilled professionals with modern technology expertise.</p>
-        </div>
-        <div>
-            <h3>✔ Custom Solutions</h3>
-            <p>Tailored software solutions based on your business needs.</p>
-        </div>
-        <div>
-            <h3>✔ Affordable Pricing</h3>
-            <p>High-quality service at competitive rates.</p>
-        </div>
-        <div>
-            <h3>✔ On-Time Delivery</h3>
-            <p>We respect deadlines and deliver projects on time.</p>
-        </div>
-    </div>
-</section>
-
 
 <section id="contact">
-    <div class="section-title">
-        <h2>Contact Us</h2>
-    </div>
-
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+    <h2>Contact Us</h2>
+    <p>Email: your@email.com</p>
+    <p>Phone: +91 1234567890</p>
 </section>
+
 <footer>
-    <h3>SSS Software Service</h3>
-    <p>Empowering businesses through technology</p>
-    <p>© 2026 SSS Software Service. All rights reserved.</p>
+    <p>© 2026 SSS Software Services</p>
 </footer>
 
 </body>
 </html>
+
