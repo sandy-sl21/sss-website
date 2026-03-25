@@ -21,19 +21,22 @@
         }
 
         header {
-            background: #0d6efd;
+            background: #FFFFFF;
             padding: 15px 50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            color:black;
+       
         }
 
         header h2 {
             font-weight: 600;
+            
         }
 
         nav a {
-            color: white;
+            color: black;
             margin-left: 20px;
             text-decoration: none;
         }
@@ -70,7 +73,42 @@
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
         }
+        #why {
+            padding: 40px;
+            background: linear-gradient(to right, #1576FD, #1576FD);
+            color: white;
+        }
 
+        .section-title {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+
+        details {
+            background: rgba(255,255,255,0.15);
+            margin-bottom: 12px;
+            padding: 12px 15px;
+            border-radius: 8px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        details[open] {
+            background: rgba(255,255,255,0.25);
+        }
+
+
+        details p {
+            margin-top: 10px;
+            font-size: 15px;
+        }   
+
+        
         .card {
             background: white;
             color: #333;
@@ -94,6 +132,7 @@
     <nav>
         <a href="#">Home</a>
         <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -106,6 +145,7 @@
 
 <section id="services">
     <h2>Our Services</h2>
+<br>
     <div class="services">
         <div class="card">
              <h3>AI Solutions</h3>
@@ -129,34 +169,36 @@
         </div>
     </div>
 </section>
-<section>
-    <div class="section-title">
-        <h2>Why Choose SSS Software Service</h2>
-    </div>
+<section id="why">
+   <div>
+    <h2 class="section-title">Why Choose SSS Software Services</h2>
 
-    <div class="why">
-        <div>
-            <h3>✔ Expert Team</h3>
-            <p>Skilled professionals with modern technology expertise.</p>
-        </div>
-        <div>
-            <h3>✔ Custom Solutions</h3>
-            <p>Tailored software solutions based on your business needs.</p>
-        </div>
-        <div>
-            <h3>✔ Affordable Pricing</h3>
-            <p>High-quality service at competitive rates.</p>
-        </div>
-        <div>
-            <h3>✔ On-Time Delivery</h3>
-            <p>We respect deadlines and deliver projects on time.</p>
-        </div>
-    </div>
+    <details>
+        <summary>Expert Team</summary>
+        <p>Skilled professionals with modern technology expertise.</p>
+    </details>
+
+    <details>
+        <summary>Custom Solutions</summary>
+        <p>Tailored software solutions based on your business needs.</p>
+    </details>
+
+    <details>
+        <summary>Affordable Pricing</summary>
+        <p>High-quality service at competitive rates.</p>
+    </details>
+
+    <details>
+        <summary>On-Time Delivery</summary>
+        <p>We respect deadlines and deliver projects on time.</p>
+    </details>
+  </div>
 </section>
 <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: ssssservice@gmail.com</p>
-    <p>Phone: 9930960089</p>
+    <p><img src="https://cdn-icons-png.flaticon.com/128/3178/3178158.png" class="icon" width="20">ssssservice@gmail.com</p>
+    <p><img src="https://cdn-icons-png.flaticon.com/128/455/455705.png" class="icon" width="20"> 9930960089</p>
+    <p><img src="https://cdn-icons-png.flaticon.com/128/5616/5616461.png" class="icon" width="20">Cheranmahadevi</p>
 </section>
 
 <footer>
@@ -165,4 +207,8 @@
 
 </body>
 </html>
+
+
+
+
 
